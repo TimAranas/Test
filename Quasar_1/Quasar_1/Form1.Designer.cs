@@ -33,11 +33,17 @@
             this.b_fold = new System.Windows.Forms.Button();
             this.tb_roll = new System.Windows.Forms.TextBox();
             this.l_total = new System.Windows.Forms.Label();
+            this.nu_bet = new System.Windows.Forms.NumericUpDown();
+            this.l_bet = new System.Windows.Forms.Label();
+            this.nu_playrNum = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nu_bet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nu_playrNum)).BeginInit();
             this.SuspendLayout();
             // 
             // b_die1
             // 
-            this.b_die1.Location = new System.Drawing.Point(42, 107);
+            this.b_die1.Location = new System.Drawing.Point(70, 127);
             this.b_die1.Name = "b_die1";
             this.b_die1.Size = new System.Drawing.Size(75, 23);
             this.b_die1.TabIndex = 0;
@@ -47,7 +53,7 @@
             // 
             // b_die2
             // 
-            this.b_die2.Location = new System.Drawing.Point(166, 107);
+            this.b_die2.Location = new System.Drawing.Point(151, 127);
             this.b_die2.Name = "b_die2";
             this.b_die2.Size = new System.Drawing.Size(75, 23);
             this.b_die2.TabIndex = 1;
@@ -57,7 +63,7 @@
             // 
             // b_fold
             // 
-            this.b_fold.Location = new System.Drawing.Point(105, 136);
+            this.b_fold.Location = new System.Drawing.Point(117, 156);
             this.b_fold.Name = "b_fold";
             this.b_fold.Size = new System.Drawing.Size(75, 23);
             this.b_fold.TabIndex = 2;
@@ -68,7 +74,7 @@
             // 
             // tb_roll
             // 
-            this.tb_roll.Location = new System.Drawing.Point(126, 165);
+            this.tb_roll.Location = new System.Drawing.Point(136, 185);
             this.tb_roll.Name = "tb_roll";
             this.tb_roll.Size = new System.Drawing.Size(32, 20);
             this.tb_roll.TabIndex = 3;
@@ -76,17 +82,75 @@
             // l_total
             // 
             this.l_total.AutoSize = true;
-            this.l_total.Location = new System.Drawing.Point(123, 199);
+            this.l_total.Location = new System.Drawing.Point(133, 222);
             this.l_total.Name = "l_total";
             this.l_total.Size = new System.Drawing.Size(34, 13);
             this.l_total.TabIndex = 4;
             this.l_total.Text = "Total:";
             // 
+            // nu_bet
+            // 
+            this.nu_bet.Location = new System.Drawing.Point(90, 101);
+            this.nu_bet.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.nu_bet.Name = "nu_bet";
+            this.nu_bet.Size = new System.Drawing.Size(120, 20);
+            this.nu_bet.TabIndex = 5;
+            this.nu_bet.ValueChanged += new System.EventHandler(this.nu_bet_ValueChanged);
+            // 
+            // l_bet
+            // 
+            this.l_bet.AutoSize = true;
+            this.l_bet.Location = new System.Drawing.Point(115, 85);
+            this.l_bet.Name = "l_bet";
+            this.l_bet.Size = new System.Drawing.Size(53, 13);
+            this.l_bet.TabIndex = 6;
+            this.l_bet.Text = "Place Bet";
+            // 
+            // nu_playrNum
+            // 
+            this.nu_playrNum.Location = new System.Drawing.Point(90, 62);
+            this.nu_playrNum.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.nu_playrNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nu_playrNum.Name = "nu_playrNum";
+            this.nu_playrNum.Size = new System.Drawing.Size(120, 20);
+            this.nu_playrNum.TabIndex = 7;
+            this.nu_playrNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nu_playrNum.ValueChanged += new System.EventHandler(this.nu_playrNum_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(99, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Number of Players";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(306, 291);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nu_playrNum);
+            this.Controls.Add(this.l_bet);
+            this.Controls.Add(this.nu_bet);
             this.Controls.Add(this.l_total);
             this.Controls.Add(this.tb_roll);
             this.Controls.Add(this.b_fold);
@@ -95,6 +159,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nu_bet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nu_playrNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,6 +173,10 @@
         private System.Windows.Forms.Button b_fold;
         private System.Windows.Forms.TextBox tb_roll;
         private System.Windows.Forms.Label l_total;
+        private System.Windows.Forms.NumericUpDown nu_bet;
+        private System.Windows.Forms.Label l_bet;
+        private System.Windows.Forms.NumericUpDown nu_playrNum;
+        private System.Windows.Forms.Label label1;
     }
 }
 

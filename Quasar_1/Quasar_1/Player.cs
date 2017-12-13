@@ -8,13 +8,6 @@ namespace Quasar_1
 {
     partial class Form1
     {
-        public int turn(int player)
-        {
-            
-            score = 0;
-            l_total.Text = "0";
-            return 1;
-        }
 
     }
 }

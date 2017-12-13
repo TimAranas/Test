@@ -7,3 +7,12 @@ c:\users\1aranastim\documents\visual studio 2015\Projects\Quasar_1\Quasar_1\obj\
 c:\users\1aranastim\documents\visual studio 2015\Projects\Quasar_1\Quasar_1\obj\Debug\Quasar_1.csproj.GenerateResource.Cache
 c:\users\1aranastim\documents\visual studio 2015\Projects\Quasar_1\Quasar_1\obj\Debug\Quasar_1.exe
 c:\users\1aranastim\documents\visual studio 2015\Projects\Quasar_1\Quasar_1\obj\Debug\Quasar_1.pdb
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\bin\Debug\Quasar_1.exe.config
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\obj\Debug\Quasar_1.exe
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\obj\Debug\Quasar_1.pdb
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\bin\Debug\Quasar_1.exe
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\bin\Debug\Quasar_1.pdb
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\obj\Debug\Quasar_1.csprojResolveAssemblyReference.cache
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\obj\Debug\Quasar_1.Form1.resources
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\obj\Debug\Quasar_1.Properties.Resources.resources
+C:\Users\1aranastim\Source\Repos\Test\Quasar_1\Quasar_1\obj\Debug\Quasar_1.csproj.GenerateResource.Cache
