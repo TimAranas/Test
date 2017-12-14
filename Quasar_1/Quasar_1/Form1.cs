@@ -13,6 +13,8 @@ namespace Quasar_1
     public partial class Form1 : Form
     {
         int score = 0;
+        double bet;
+
         //Turn turn;
         public Form1()
         {
@@ -52,11 +54,15 @@ namespace Quasar_1
         private void b_fold_Click(object sender, EventArgs e)//fold button (finish turn)
         {
             tb_roll.Text = "0";
+            //finish player turn, move on to the next one
+            int payout = finish(score, bet);
         }
 
         private void nu_bet_ValueChanged(object sender, EventArgs e)//change initial bet
         {
-            nu_bet.
+            l_profit.Text = "Profit: " + nu_bet.Value;
+            decimal initial = nu_bet.Value;
+            bet = decimal.ToDouble(initial);
         }
 
         private void nu_playrNum_ValueChanged(object sender, EventArgs e)//change num of players
@@ -66,6 +72,7 @@ namespace Quasar_1
             {
                 playerList.Add(i);
             }
+            l_playerTurn.Text = "Player 's Turn";
         }
     }
 }
