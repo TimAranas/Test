@@ -13,9 +13,9 @@ namespace Quasar_1
     public partial class Form1 : Form
     {
         int score = 0;
-        double bet;
-
-        //Turn turn;
+        double winnings;
+        double initial;
+        Turn turn;
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +23,8 @@ namespace Quasar_1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            turn = new Turn();
+            
         }
 
         private void b_die1_Click(object sender, EventArgs e)//roll 1-8 die
@@ -32,37 +33,41 @@ namespace Quasar_1
             tb_roll.Text = "" + result;
             score = score + result;
             l_total.Text = "Total: " + score;
+            nu_bet.Enabled = false;
             if (score >= 15)
             {
                 b_fold.Visible = true;
             }
-        }
+            double payout = turn.finish(score, initial);
+            l_profit.Text = "Profit: " + payout;
 
+        }
+       
         private void b_die2_Click(object sender, EventArgs e)//roll 4-7 die
         {
             int result = rollDie(4, 8);
             tb_roll.Text = "" + result;
             score = score + result;
             l_total.Text = "Total: " + score;
+            nu_bet.Enabled = false;
             if (score >= 15)
             {
                 b_fold.Visible = true;
             }
-
+            double payout = turn.finish(score, initial);
+            l_profit.Text = "Profit: " + payout;
         }
 
         private void b_fold_Click(object sender, EventArgs e)//fold button (finish turn)
         {
             tb_roll.Text = "0";
-            //finish player turn, move on to the next one
-            int payout = finish(score, bet);
+           
         }
 
         private void nu_bet_ValueChanged(object sender, EventArgs e)//change initial bet
         {
+            initial = decimal.ToDouble(nu_bet.Value);
             l_profit.Text = "Profit: " + nu_bet.Value;
-            decimal initial = nu_bet.Value;
-            bet = decimal.ToDouble(initial);
         }
 
         private void nu_playrNum_ValueChanged(object sender, EventArgs e)//change num of players

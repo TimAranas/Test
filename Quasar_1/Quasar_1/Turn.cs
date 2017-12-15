@@ -8,13 +8,20 @@ namespace Quasar_1
 {
     partial class Form1
     {
-        public double finish(int total, double bet)
+
+    }
+
+    public class Turn
+    {
+        
+        public double finish(int total, double bet)//calculate player's winnings based on score
         {
             if (total == 15)
             {
                 bet = bet * 0.25;
+               
             }
-            else if(total == 16)
+            else if (total == 16)
             {
                 bet = bet * 0.50;
             }
@@ -22,7 +29,7 @@ namespace Quasar_1
             {
                 bet = bet * 1.00;
             }
-            else if(total == 18)
+            else if (total == 18)
             {
                 bet = bet * 1.25;
             }
@@ -34,8 +41,13 @@ namespace Quasar_1
             {
                 bet = bet * 2.00;
             }
+            else if(total > 20)
+            {
+                bet = 0;
+            }
             return bet;
-        }
 
+
+        }
     }
 }

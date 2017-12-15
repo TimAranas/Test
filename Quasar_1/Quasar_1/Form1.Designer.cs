@@ -39,15 +39,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.l_profit = new System.Windows.Forms.Label();
             this.l_playerTurn = new System.Windows.Forms.Label();
+            this.l_numTurns = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nu_bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nu_playrNum)).BeginInit();
             this.SuspendLayout();
             // 
             // b_die1
             // 
-            this.b_die1.Location = new System.Drawing.Point(12, 96);
+            this.b_die1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_die1.Location = new System.Drawing.Point(12, 70);
             this.b_die1.Name = "b_die1";
-            this.b_die1.Size = new System.Drawing.Size(75, 23);
+            this.b_die1.Size = new System.Drawing.Size(72, 42);
             this.b_die1.TabIndex = 0;
             this.b_die1.Text = "1-8";
             this.b_die1.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // b_die2
             // 
-            this.b_die2.Location = new System.Drawing.Point(107, 96);
+            this.b_die2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_die2.Location = new System.Drawing.Point(112, 70);
             this.b_die2.Name = "b_die2";
-            this.b_die2.Size = new System.Drawing.Size(75, 23);
+            this.b_die2.Size = new System.Drawing.Size(71, 42);
             this.b_die2.TabIndex = 1;
             this.b_die2.Text = "4-7";
             this.b_die2.UseVisualStyleBackColor = true;
@@ -65,9 +68,10 @@
             // 
             // b_fold
             // 
-            this.b_fold.Location = new System.Drawing.Point(60, 125);
+            this.b_fold.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_fold.Location = new System.Drawing.Point(60, 118);
             this.b_fold.Name = "b_fold";
-            this.b_fold.Size = new System.Drawing.Size(75, 23);
+            this.b_fold.Size = new System.Drawing.Size(76, 30);
             this.b_fold.TabIndex = 2;
             this.b_fold.Text = "Fold";
             this.b_fold.UseVisualStyleBackColor = true;
@@ -84,9 +88,10 @@
             // l_total
             // 
             this.l_total.AutoSize = true;
-            this.l_total.Location = new System.Drawing.Point(79, 177);
+            this.l_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_total.Location = new System.Drawing.Point(72, 186);
             this.l_total.Name = "l_total";
-            this.l_total.Size = new System.Drawing.Size(34, 13);
+            this.l_total.Size = new System.Drawing.Size(42, 16);
             this.l_total.TabIndex = 4;
             this.l_total.Text = "Total:";
             // 
@@ -111,9 +116,10 @@
             // l_bet
             // 
             this.l_bet.AutoSize = true;
+            this.l_bet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_bet.Location = new System.Drawing.Point(293, 80);
             this.l_bet.Name = "l_bet";
-            this.l_bet.Size = new System.Drawing.Size(53, 13);
+            this.l_bet.Size = new System.Drawing.Size(66, 16);
             this.l_bet.TabIndex = 6;
             this.l_bet.Text = "Place Bet";
             // 
@@ -143,18 +149,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(280, 39);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(268, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Number of Players";
             // 
             // l_profit
             // 
             this.l_profit.AutoSize = true;
-            this.l_profit.Location = new System.Drawing.Point(80, 200);
+            this.l_profit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_profit.Location = new System.Drawing.Point(73, 213);
             this.l_profit.Name = "l_profit";
-            this.l_profit.Size = new System.Drawing.Size(34, 13);
+            this.l_profit.Size = new System.Drawing.Size(41, 16);
             this.l_profit.TabIndex = 9;
             this.l_profit.Text = "Profit:";
             // 
@@ -168,11 +176,22 @@
             this.l_playerTurn.TabIndex = 10;
             this.l_playerTurn.Text = "Player  \'s Turn";
             // 
+            // l_numTurns
+            // 
+            this.l_numTurns.AutoSize = true;
+            this.l_numTurns.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_numTurns.Location = new System.Drawing.Point(264, 197);
+            this.l_numTurns.Name = "l_numTurns";
+            this.l_numTurns.Size = new System.Drawing.Size(113, 16);
+            this.l_numTurns.TabIndex = 11;
+            this.l_numTurns.Text = "Number of Turns: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 274);
+            this.ClientSize = new System.Drawing.Size(428, 277);
+            this.Controls.Add(this.l_numTurns);
             this.Controls.Add(this.l_playerTurn);
             this.Controls.Add(this.l_profit);
             this.Controls.Add(this.label1);
@@ -207,6 +226,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label l_profit;
         private System.Windows.Forms.Label l_playerTurn;
+        private System.Windows.Forms.Label l_numTurns;
     }
 }
 
