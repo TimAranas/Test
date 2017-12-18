@@ -16,6 +16,7 @@ namespace Quasar_1
         double winnings;
         double initial;
         Turn turn;
+        Player player;
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +24,9 @@ namespace Quasar_1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            player = new Player();
             turn = new Turn();
+            
             
         }
 
@@ -61,13 +64,16 @@ namespace Quasar_1
         private void b_fold_Click(object sender, EventArgs e)//fold button (finish turn)
         {
             tb_roll.Text = "0";
-           
+            
         }
 
         private void nu_bet_ValueChanged(object sender, EventArgs e)//change initial bet
         {
             initial = decimal.ToDouble(nu_bet.Value);
             l_profit.Text = "Profit: " + nu_bet.Value;
+            b_die1.Enabled = true;
+            b_die2.Enabled = true;
+            b_fold.Enabled = true;
         }
 
         private void nu_playrNum_ValueChanged(object sender, EventArgs e)//change num of players
@@ -78,6 +84,17 @@ namespace Quasar_1
                 playerList.Add(i);
             }
             l_playerTurn.Text = "Player 's Turn";
+            b_start.Visible = true;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            nu_bet.Enabled = true;
         }
     }
 }

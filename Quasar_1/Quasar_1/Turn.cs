@@ -47,7 +47,6 @@ namespace Quasar_1
             }
             return bet;
 
-
         }
     }
 }

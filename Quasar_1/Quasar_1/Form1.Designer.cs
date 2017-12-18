@@ -40,14 +40,16 @@
             this.l_profit = new System.Windows.Forms.Label();
             this.l_playerTurn = new System.Windows.Forms.Label();
             this.l_numTurns = new System.Windows.Forms.Label();
+            this.b_start = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nu_bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nu_playrNum)).BeginInit();
             this.SuspendLayout();
             // 
             // b_die1
             // 
+            this.b_die1.Enabled = false;
             this.b_die1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_die1.Location = new System.Drawing.Point(12, 70);
+            this.b_die1.Location = new System.Drawing.Point(53, 161);
             this.b_die1.Name = "b_die1";
             this.b_die1.Size = new System.Drawing.Size(72, 42);
             this.b_die1.TabIndex = 0;
@@ -57,8 +59,9 @@
             // 
             // b_die2
             // 
+            this.b_die2.Enabled = false;
             this.b_die2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_die2.Location = new System.Drawing.Point(112, 70);
+            this.b_die2.Location = new System.Drawing.Point(144, 161);
             this.b_die2.Name = "b_die2";
             this.b_die2.Size = new System.Drawing.Size(71, 42);
             this.b_die2.TabIndex = 1;
@@ -68,8 +71,9 @@
             // 
             // b_fold
             // 
+            this.b_fold.Enabled = false;
             this.b_fold.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_fold.Location = new System.Drawing.Point(60, 118);
+            this.b_fold.Location = new System.Drawing.Point(95, 209);
             this.b_fold.Name = "b_fold";
             this.b_fold.Size = new System.Drawing.Size(76, 30);
             this.b_fold.TabIndex = 2;
@@ -80,7 +84,7 @@
             // 
             // tb_roll
             // 
-            this.tb_roll.Location = new System.Drawing.Point(82, 154);
+            this.tb_roll.Location = new System.Drawing.Point(112, 261);
             this.tb_roll.Name = "tb_roll";
             this.tb_roll.Size = new System.Drawing.Size(32, 20);
             this.tb_roll.TabIndex = 3;
@@ -89,7 +93,7 @@
             // 
             this.l_total.AutoSize = true;
             this.l_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_total.Location = new System.Drawing.Point(72, 186);
+            this.l_total.Location = new System.Drawing.Point(109, 299);
             this.l_total.Name = "l_total";
             this.l_total.Size = new System.Drawing.Size(42, 16);
             this.l_total.TabIndex = 4;
@@ -97,12 +101,13 @@
             // 
             // nu_bet
             // 
+            this.nu_bet.Enabled = false;
             this.nu_bet.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            this.nu_bet.Location = new System.Drawing.Point(267, 99);
+            this.nu_bet.Location = new System.Drawing.Point(257, 261);
             this.nu_bet.Maximum = new decimal(new int[] {
             500,
             0,
@@ -117,7 +122,7 @@
             // 
             this.l_bet.AutoSize = true;
             this.l_bet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_bet.Location = new System.Drawing.Point(293, 80);
+            this.l_bet.Location = new System.Drawing.Point(276, 232);
             this.l_bet.Name = "l_bet";
             this.l_bet.Size = new System.Drawing.Size(66, 16);
             this.l_bet.TabIndex = 6;
@@ -125,7 +130,7 @@
             // 
             // nu_playrNum
             // 
-            this.nu_playrNum.Location = new System.Drawing.Point(267, 55);
+            this.nu_playrNum.Location = new System.Drawing.Point(86, 59);
             this.nu_playrNum.Maximum = new decimal(new int[] {
             4,
             0,
@@ -150,17 +155,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 36);
+            this.label1.Location = new System.Drawing.Point(83, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Number of Players";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // l_profit
             // 
             this.l_profit.AutoSize = true;
             this.l_profit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_profit.Location = new System.Drawing.Point(73, 213);
+            this.l_profit.Location = new System.Drawing.Point(109, 348);
             this.l_profit.Name = "l_profit";
             this.l_profit.Size = new System.Drawing.Size(41, 16);
             this.l_profit.TabIndex = 9;
@@ -170,7 +176,7 @@
             // 
             this.l_playerTurn.AutoSize = true;
             this.l_playerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_playerTurn.Location = new System.Drawing.Point(263, 149);
+            this.l_playerTurn.Location = new System.Drawing.Point(257, 179);
             this.l_playerTurn.Name = "l_playerTurn";
             this.l_playerTurn.Size = new System.Drawing.Size(130, 24);
             this.l_playerTurn.TabIndex = 10;
@@ -180,17 +186,29 @@
             // 
             this.l_numTurns.AutoSize = true;
             this.l_numTurns.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_numTurns.Location = new System.Drawing.Point(264, 197);
+            this.l_numTurns.Location = new System.Drawing.Point(254, 299);
             this.l_numTurns.Name = "l_numTurns";
             this.l_numTurns.Size = new System.Drawing.Size(113, 16);
             this.l_numTurns.TabIndex = 11;
             this.l_numTurns.Text = "Number of Turns: ";
             // 
+            // b_start
+            // 
+            this.b_start.Location = new System.Drawing.Point(267, 56);
+            this.b_start.Name = "b_start";
+            this.b_start.Size = new System.Drawing.Size(75, 23);
+            this.b_start.TabIndex = 12;
+            this.b_start.Text = "Start";
+            this.b_start.UseVisualStyleBackColor = true;
+            this.b_start.Visible = false;
+            this.b_start.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 277);
+            this.ClientSize = new System.Drawing.Size(412, 426);
+            this.Controls.Add(this.b_start);
             this.Controls.Add(this.l_numTurns);
             this.Controls.Add(this.l_playerTurn);
             this.Controls.Add(this.l_profit);
@@ -227,6 +245,7 @@
         private System.Windows.Forms.Label l_profit;
         private System.Windows.Forms.Label l_playerTurn;
         private System.Windows.Forms.Label l_numTurns;
+        private System.Windows.Forms.Button b_start;
     }
 }
 
