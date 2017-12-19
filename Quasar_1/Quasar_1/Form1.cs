@@ -16,6 +16,7 @@ namespace Quasar_1
         double winnings;
         double initial;
         Turn turn;
+        int turns;
         Player player;
         public Form1()
         {
@@ -83,7 +84,7 @@ namespace Quasar_1
             {
                 playerList.Add(i);
             }
-            l_playerTurn.Text = "Player 's Turn";
+            l_playerTurn.Text = "Player" +nu_playrNum.Value+" Turn";
             b_start.Visible = true;
         }
 
